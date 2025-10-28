@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Projetos — ONG Viver Mais</title>
+        <meta name="description" content="Lista de projetos sociais, oportunidades de voluntariado e como doar."/>
+        <link rel="stylesheet" href="/assets/css/styles.min.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Ir para o conteúdo</a>
+        <header class="site-header" role="banner">
+            <div class="container">
+                <a href="index.html" class="brand">ONG Viver Mais</a>
+                <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                    <button id="navToggle2" aria-expanded="false" aria-controls="menuList2">Menu</button>
+                    <ul id="menuList2" class="menu" hidden>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="container" role="main">
+            <h1>Projetos Sociais</h1>
+            <section id="alfabetizar" aria-labelledby="alf-title">
+                <h2 id="alf-title">Projeto Alfabetizar</h2>
+                <p>Objetivo: reduzir o analfabetismo e aumentar a inclusão escolar.</p>
+                <figure>
+                    <img src="Alfabetização.jpg" alt="Aula de alfabetização" loading="lazy">
+                    <figcaption>Voluntários ensinando leitura e escrita.</figcaption>
+                </figure>
+                <p><strong>Indicadores:</strong> 300 pessoas atendidas / 85% conclusão.</p>
+                <a class="btn" href="#voluntariado">Quero ser voluntário</a>
+            </section>
+
+            <section id="saude" aria-labelledby="saude-title">
+                <h2 id="saude-title">Saúde Comunitária</h2>
+                <p>Clínicas móveis com atendimento preventivo e orientações de saúde.</p>
+                <figure>
+                    <img src="Clínica móvel.jpg" alt="Atendimento em clínica móvel" loading="lazy">
+                    <figcaption>Clínica Móvel.</figcaption>
+                </figure>
+                <p><strong>Impacto:</strong> 4.000 atendimentos por ano.</p>
+                <a class="btn outline" href="#doar">Doar para saúde</a>
+            </section>
+
+            <section id="voluntariado" aria-labelledby="vol-title">
+                <h2 id="vol-title">Engajamento de Voluntários</h2>
+                <p>Cadastre-se para ver oportunidades e realizar inscrições em projetos.</p>
+                <a class="btn" href="cadastro.html">Cadastre-se</a>
+                <ul class="opportunities">
+                    <li>
+                        <article>
+                        <h3>Monitor de Alfabetização</h3>
+                        <p>Requisitos: maior de 18 anos; disponibilidade 4h/semana.</p>
+                        <p><strong>Inscrições:</strong> até 15/11/2025</p>
+                        <a href="cadastro.html">Inscrever-se</a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="doar" aria-labelledby="doar-title">
+                <h2 id="doar-title">Captação de Recursos</h2>
+                <p>Campanhas ativas com metas claras e relatórios de aplicação.</p>
+                <div class="campaign">
+                    <h3>Campanha: Saneamento Básico</h3>
+                    <progress value="6200" max="10000">62%</progress>
+                    <p>Meta: R$ 10.000 — Arrecadado: R$ 6.200</p>
+                    <a class="btn" href="#donate">Doe agora</a>
+                </div>
+                <div id="donate" aria-hidden="false">
+                    <h4>Doação online (simulada)</h4>
+                    <form class="donation-form" action="#" method="post">
+                        <label for="nomeD">Nome completo</label>
+                        <input id="nomeD" name="nomeD" type="text" required>
+                        <label for="valor">Valor (R$)</label>
+                        <input id="valor" name="valor" type="number" min="1" step="0.01" required>
+                        <button class="btn" type="submit">Doar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <p>&copy; <span id="year2"></span> ONG Exemplo</p>
+            </div>
+        </footer>
+    <script src="/assets/js/app.min.js" defer></script>
+    </body>
+</html>
